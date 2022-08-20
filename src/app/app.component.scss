@@ -1,0 +1,18 @@
+@import "~@healthcatalyst/cashmere/scss/colors";
+
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+hc-navbar {
+  filter: drop-shadow(0 0 10px $shadow);
+}
+
+.body {
+  padding: 20px;
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,3 +1,6 @@
+import { environmentDefaults } from './environment.defaults';
+
 export const environment = {
-  production: true
+  ...environmentDefaults,
+  production: true,
 };
