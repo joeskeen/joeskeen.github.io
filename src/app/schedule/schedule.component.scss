@@ -3,15 +3,21 @@
   flex-direction: column;
 }
 
+.content-container {
+  max-width: 675px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .calendly-container {
   flex: 1;
   display: flex;
-  margin: 0 -20px -20px -20px;
+  margin: -40px -20px -20px -20px;
 }
 
 ul {
   margin: 10px;
-  list-style: inside;
+  //   list-style: inside;
 }
 
 li {
