@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { IReview, ReviewsService } from './reviews.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  reviews?: IReview[];
 
-  constructor() { }
+  constructor(private reviewsService: ReviewsService) {}
 
-  ngOnInit(): void {
+  async ngOnInit() {
+    this.reviews = await this.reviewsService.getReviews();
   }
-
 }

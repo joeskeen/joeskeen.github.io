@@ -9,6 +9,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { PayComponent } from './pay/pay.component';
 import { Calendly, CALENDLY_TOKEN } from './schedule/calendly';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,13 @@ import { Calendly, CALENDLY_TOKEN } from './schedule/calendly';
     ScheduleComponent,
     PayComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, CashmereModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    CashmereModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [{ provide: CALENDLY_TOKEN, useValue: Calendly }],
   bootstrap: [AppComponent],
 })

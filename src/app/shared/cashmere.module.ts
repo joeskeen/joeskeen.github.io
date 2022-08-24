@@ -3,8 +3,12 @@ import {
   ButtonModule,
   FormFieldModule,
   IconModule,
+  InputModule,
+  ListModule,
   NavbarModule,
+  ProgressIndicatorsModule,
   TileModule,
+  ToasterModule,
 } from '@healthcatalyst/cashmere';
 
 @NgModule({
@@ -13,7 +17,11 @@ import {
     ButtonModule,
     IconModule,
     FormFieldModule,
+    InputModule,
     TileModule,
+    ToasterModule,
+    ListModule,
+    ProgressIndicatorsModule,
   ],
 })
 export class CashmereModule {}

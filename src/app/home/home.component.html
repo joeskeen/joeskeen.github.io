@@ -1,1 +1,47 @@
-<p>Home page coming soon!</p>
+<div class="flex">
+  <div class="hero">
+    <h1>Joe Skeen</h1>
+    <h3>Developer and Mentor</h3>
+    <div class="social">
+      <hc-icon fontSet="fa" fontIcon="fa-github" hcIconLg></hc-icon>
+      <hc-icon fontSet="fa" fontIcon="fa-twitter" hcIconLg></hc-icon>
+      <hc-icon fontSet="fa" fontIcon="fa-stack-overflow" hcIconLg></hc-icon>
+      <hc-icon fontSet="fa" fontIcon="fa-medium" hcIconLg></hc-icon>
+      <hc-icon fontSet="fa" fontIcon="fa-linkedin" hcIconLg></hc-icon>
+    </div>
+  </div>
+</div>
+
+<hc-tile class="review-container">
+  <ng-container *ngIf="!reviews">
+    <span class="loadingText">loading reviews...</span>
+  </ng-container>
+
+  <ng-container *ngIf="reviews">
+    <h2>What clients have to say about me:</h2>
+    <hc-list class="reviews">
+      <hc-list-item *ngFor="let review of reviews">
+        <hc-icon
+          hcListIcon
+          *ngIf="!review.reviewer.avatarUrl"
+          fontSet="fa"
+          fontIcon="fa-user"
+        ></hc-icon>
+        <img
+          hcListIcon
+          *ngIf="review.reviewer.avatarUrl"
+          [src]="review.reviewer.avatarUrl"
+        />
+
+        <h4 hcListLine>{{ review.reviewer.name }}</h4>
+        <p hcListLine class="reviewText">{{ review.review }}</p>
+      </hc-list-item>
+    </hc-list>
+    <p>
+      See more of my reviews at my
+      <a href="https://codementor.io/@joeskeen" target="_blank"
+        >Codementor.io profile page</a
+      >.
+    </p>
+  </ng-container>
+</hc-tile>

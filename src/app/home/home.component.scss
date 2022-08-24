@@ -1,0 +1,64 @@
+:host {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex {
+  flex: 1;
+  display: flex;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 68px;
+  }
+
+  .social {
+    margin: 15px;
+
+    hc-icon {
+      margin: 5px;
+    }
+  }
+}
+
+.review-container {
+  width: auto;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.reviews {
+  $size: 40px;
+  max-width: 450px;
+
+  hc-list-item {
+    height: unset;
+    margin-bottom: 15px;
+  }
+
+  hc-icon {
+    width: $size;
+    height: $size;
+    margin-right: 2px;
+    padding-top: 10px;
+    background-color: #c0c0c0;
+    border-radius: 50%;
+    color: white;
+  }
+  img {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+  }
+}
