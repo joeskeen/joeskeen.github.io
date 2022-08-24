@@ -21,15 +21,33 @@
 
   .social {
     margin: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
-    hc-icon {
+    hc-icon,
+    img,
+    svg {
       margin: 5px;
+    }
+
+    .social-link {
+      height: 36px;
+
+      &.codementor {
+        width: 55px;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
     }
   }
 }
 
 .review-container {
   width: auto;
+  max-width: 50vw;
 }
 
 h2 {
@@ -38,7 +56,6 @@ h2 {
 
 .reviews {
   $size: 40px;
-  max-width: 450px;
 
   hc-list-item {
     height: unset;
