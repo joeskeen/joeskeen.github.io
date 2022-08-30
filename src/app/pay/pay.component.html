@@ -1,1 +1,25 @@
-<p>Payment page coming soon!</p>
+<div class="container">
+  <h2>Thank you for your business!</h2>
+  <p>
+    Here you can make payments or send tips for freelance services provided.
+  </p>
+
+  <hc-tile>
+    <hc-form-field>
+      <hc-label>Amount (USD):</hc-label>
+      <input hcInput [formControl]="amountControl" placeholder="$0.00" />
+      <hc-error *ngIf="amountControl.errors?.['pattern']">
+        Please enter a valid amount in USD (United States Dollars).
+      </hc-error>
+    </hc-form-field>
+    <hc-form-field>
+      <hc-label>Memo:</hc-label>
+      <input
+        hcInput
+        [formControl]="memoControl"
+        placeholder="Invoice number or description"
+      />
+    </hc-form-field>
+    <div class="paypalButtonContainer" #paypalButtonContainer></div>
+  </hc-tile>
+</div>
