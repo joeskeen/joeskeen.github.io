@@ -29,6 +29,13 @@
   },
   {
     "reviewer": {
+      "name": "brandon radford",
+      "avatarUrl": null
+    },
+    "review": "Very knowledgeable about anything Azure DevOps related. Helped me understand and implement a working pipeline for deployment."
+  },
+  {
+    "reviewer": {
       "name": "Kevin King",
       "avatarUrl": "https://process.filestackapi.com/cache=expiry:max/YIId76dSpKwSBmC30LMu"
     },
