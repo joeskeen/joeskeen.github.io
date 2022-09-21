@@ -7,6 +7,11 @@
 
 hc-navbar {
   filter: drop-shadow(0 0 10px $shadow);
+
+  hc-navbar-link {
+    cursor: pointer;
+    user-select: none;
+  }
 }
 
 .body {

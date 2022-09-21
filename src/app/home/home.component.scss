@@ -1,6 +1,8 @@
 :host {
   display: flex;
   flex-direction: column;
+  max-height: 100%;
+  overflow: hidden;
 
   @media screen and (min-width: 1000px) {
     flex-direction: row;
@@ -51,6 +53,8 @@
 
 .review-container {
   width: auto;
+  max-height: 100%;
+  overflow: auto;
 
   @media screen and (min-width: 1000px) {
     max-width: 50vw;
