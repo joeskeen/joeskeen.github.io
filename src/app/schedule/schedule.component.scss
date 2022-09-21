@@ -12,7 +12,12 @@
 .calendly-container {
   flex: 1;
   display: flex;
-  margin: 0 -20px -20px -20px;
+  margin: 50px -20px -20px -20px;
+  min-height: 2000px;
+
+  @media screen and (min-width: 668px) {
+    margin-top: 0;
+  }
 }
 
 ul {
