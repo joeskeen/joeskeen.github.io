@@ -81,39 +81,47 @@
         </svg>
       </a>
     </div>
+    <a
+      href="https://www.credly.com/badges/a31df9da-07f6-4b37-a711-948398e699b4/public_url"
+      title="Click to verify my Azure Administrator certification."
+      ><img
+        class="certification-badge"
+        src="assets/microsoft-certified-azure-administrator-associate.2.png"
+        alt="Microsoft Certified Azure Administrator Associate"
+    /></a>
   </div>
+
+  <hc-tile class="review-container">
+    <ng-container *ngIf="!reviews">
+      <span class="loadingText">loading reviews...</span>
+    </ng-container>
+
+    <ng-container *ngIf="reviews">
+      <h2>What clients have to say about me:</h2>
+      <hc-list class="reviews">
+        <hc-list-item *ngFor="let review of reviews">
+          <hc-icon
+            hcListIcon
+            *ngIf="!review.reviewer.avatarUrl"
+            fontSet="fa"
+            fontIcon="fa-user"
+          ></hc-icon>
+          <img
+            hcListIcon
+            *ngIf="review.reviewer.avatarUrl"
+            [src]="review.reviewer.avatarUrl"
+          />
+
+          <h4 hcListLine>{{ review.reviewer.name }}</h4>
+          <p hcListLine class="reviewText">{{ review.review }}</p>
+        </hc-list-item>
+      </hc-list>
+      <p>
+        See more of my reviews at my
+        <a href="https://codementor.io/@joeskeen" target="_blank"
+          >Codementor.io profile page</a
+        >.
+      </p>
+    </ng-container>
+  </hc-tile>
 </div>
-
-<hc-tile class="review-container">
-  <ng-container *ngIf="!reviews">
-    <span class="loadingText">loading reviews...</span>
-  </ng-container>
-
-  <ng-container *ngIf="reviews">
-    <h2>What clients have to say about me:</h2>
-    <hc-list class="reviews">
-      <hc-list-item *ngFor="let review of reviews">
-        <hc-icon
-          hcListIcon
-          *ngIf="!review.reviewer.avatarUrl"
-          fontSet="fa"
-          fontIcon="fa-user"
-        ></hc-icon>
-        <img
-          hcListIcon
-          *ngIf="review.reviewer.avatarUrl"
-          [src]="review.reviewer.avatarUrl"
-        />
-
-        <h4 hcListLine>{{ review.reviewer.name }}</h4>
-        <p hcListLine class="reviewText">{{ review.review }}</p>
-      </hc-list-item>
-    </hc-list>
-    <p>
-      See more of my reviews at my
-      <a href="https://codementor.io/@joeskeen" target="_blank"
-        >Codementor.io profile page</a
-      >.
-    </p>
-  </ng-container>
-</hc-tile>
