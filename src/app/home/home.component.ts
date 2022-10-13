@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
   constructor(private reviewsService: ReviewsService) {}
 
   async ngOnInit() {
-    this.reviews = await this.reviewsService.getReviews();
+    const reviews = await this.reviewsService.getReviews();
+    reviews.sort(() => Math.random() - 0.5);
+    this.reviews = reviews;
   }
 }
