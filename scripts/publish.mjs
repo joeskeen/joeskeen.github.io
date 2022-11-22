@@ -29,6 +29,7 @@ copyFileSync(
   join(outputDirectory, "index.html"),
   join(outputDirectory, "404.html")
 );
+copyFileSync(join(projectRoot, "CNAME"), join(outputDirectory, "CNAME"));
 run(`git init`, outputDirectory);
 run(`git add .`, outputDirectory);
 run(`git commit -m "build output"`, outputDirectory);

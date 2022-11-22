@@ -21,3 +21,14 @@ hc-navbar {
   display: flex;
   flex-direction: column;
 }
+
+.resume {
+  > span,
+  > hc-icon {
+    color: white;
+  }
+
+  hc-icon {
+    margin-right: 5px;
+  }
+}
