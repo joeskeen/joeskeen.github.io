@@ -12,6 +12,7 @@ import { PayComponent } from './pay/pay.component';
 import { Calendly, CALENDLY_TOKEN } from './schedule/calendly';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AdventOfCodeComponent } from './advent-of-code/advent-of-code.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     PortfolioComponent,
     ScheduleComponent,
     PayComponent,
+    AdventOfCodeComponent,
   ],
   imports: [
     BrowserModule,
