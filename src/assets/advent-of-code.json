@@ -17,8 +17,13 @@
         },
         {
             "day": 4,
-            "videoId": "WSW65nsdPU8",
-            "debut": "1670265000000"
+            "title": "Camp Cleanup",
+            "videoId": "WSW65nsdPU8"
+        },
+        {
+            "day": 5,
+            "videoId": "tG41LAdxcuU",
+            "debut": 1670351400000
         }
     ]
 }
