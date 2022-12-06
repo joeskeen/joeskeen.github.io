@@ -22,8 +22,13 @@
         },
         {
             "day": 5,
-            "videoId": "tG41LAdxcuU",
-            "debut": 1670351400000
+            "title": "Supply Stacks",
+            "videoId": "tG41LAdxcuU"
+        },
+        {
+            "day": 6,
+            "videoId": "42MbuVALUPY",
+            "debut": 1670437800000
         }
     ]
 }
