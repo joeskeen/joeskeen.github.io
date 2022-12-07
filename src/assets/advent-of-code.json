@@ -27,8 +27,13 @@
         },
         {
             "day": 6,
-            "videoId": "42MbuVALUPY",
-            "debut": 1670437800000
+            "title": "Tuning Trouble",
+            "videoId": "42MbuVALUPY"
+        },
+        {
+            "day": 7,
+            "videoId": "sOV5O22cZWs",
+            "debut": 1670524200000
         }
     ]
 }
