@@ -32,8 +32,13 @@
         },
         {
             "day": 7,
-            "videoId": "sOV5O22cZWs",
-            "debut": 1670524200000
+            "title": "No Space Left On Device",
+            "videoId": "sOV5O22cZWs"
+        },
+        {
+            "day": 8,
+            "videoId": "SUgzCy77mQA",
+            "debut": 1670610600000
         }
     ]
 }
