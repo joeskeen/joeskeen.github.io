@@ -37,8 +37,23 @@
         },
         {
             "day": 8,
-            "videoId": "SUgzCy77mQA",
-            "debut": 1670610600000
+            "title": "Treetop Tree House",
+            "videoId": "SUgzCy77mQA"
+        },
+        {
+            "day": 9,
+            "title": "Rope Bridge",
+            "videoId": "D2M8-pVdwEE"
+        },
+        {
+            "day": 10,
+            "title": "Cathode-Ray Tube",
+            "videoId": "XR8QfJZqd6I"
+        },
+        {
+            "day": 11,
+            "videoId": "iPefWFbF-Gk",
+            "debut": 1670869800000
         }
     ]
 }
